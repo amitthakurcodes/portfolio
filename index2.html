@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Amit Thakur | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="tailwind.config.js"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5048e5",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121121",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <!-- Top Navigation Bar -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+            <div class="flex items-center gap-2">
+                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
+                    <span class="material-symbols-outlined">code</span>
+                </div>
+                <h2 class="text-xl font-bold tracking-tight">Amit Thakur</h2>
+            </div>
+            <nav class="hidden items-center gap-8 md:flex">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#skills">Skills</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+                <a href="Amit_Resume.pdf"
+                    class="rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white hover:bg-primary/90 transition-all">
+                    Resume
+                </a>
+            </nav>
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-7xl px-6">
+        <!-- Hero Section -->
+        <section class="flex flex-col gap-12 py-16 md:flex-row md:items-center md:py-24">
+            <div class="flex flex-1 flex-col gap-8">
+                <div class="space-y-4">
+                    <h1 class="text-5xl font-black leading-tight tracking-tight md:text-7xl">
+                        Amit Thakur
+                    </h1>
+                    <h2 class="text-xl font-semibold text-primary md:text-2xl">
+                        <!-- Web Developer | MERN Stack Developer -->
+                        Full-Stack Developer | Web Applications
+                    </h2>
+                    <p class="max-w-lg text-lg text-slate-600 dark:text-slate-400">
+                        I build modern and scalable web applications, focusing on performance, clean architecture, and
+                        seamless user experience.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects"
+                        class="rounded-xl bg-primary px-8 py-4 font-bold text-white shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                        View Projects
+                    </a>
+                    <a href="Amit_Resume.pdf" download
+                        class="rounded-xl border border-primary/20 bg-primary/5 px-8 py-4 font-bold text-primary hover:bg-primary/10 transition-colors inline-block text-center">
+                        Download Resume
+                    </a>
+                    <a href="#contact"
+                        class="rounded-xl bg-slate-200 dark:bg-slate-800 px-8 py-4 font-bold hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors inline-block text-center">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-1 justify-center">
+                <img src="img_folder/Amitdp.jpeg"
+                    class="w-[24rem] h-[25rem] object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl" />
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 border-t border-primary/5" id="about">
+            <div class="max-w-3xl">
+                <h3 class="mb-6 text-3xl font-bold">About Me</h3>
+                <p class="text-xl leading-relaxed text-slate-600 dark:text-slate-400">
+                <p class="text-xl leading-relaxed text-slate-600 dark:text-slate-400">
+                    I’m a Full Stack Web Developer specializing in the MERN stack, with hands-on experience building
+                    real-world applications like learning platforms and interactive dashboards.
+
+                    I enjoy turning ideas into functional products — from designing clean user interfaces to building
+                    scalable backend systems.
+
+                    Alongside web development, I’ve also explored Embedded Systems and IoT, which has helped me develop
+                    a deeper understanding of how software interacts with real-world hardware.
+
+                    I'm constantly improving my skills by building projects and experimenting with new technologies,
+                    with a strong focus on writing clean, efficient, and user-friendly code.
+                </p>
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section class="py-20" id="skills">
+            <h3 class="mb-12 text-center text-3xl font-bold">Technical Skills</h3>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+
+                <!-- Languages -->
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-brands fa-java text-4xl text-red-500"></i>
+                    <span class="font-semibold">Java</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-solid fa-code text-4xl text-blue-500"></i>
+                    <span class="font-semibold">C++</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-brands fa-js text-4xl text-yellow-400"></i>
+                    <span class="font-semibold">JavaScript</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-solid fa-database text-4xl text-green-500"></i>
+                    <span class="font-semibold">SQL</span>
+                </div>
+
+                <!-- Frontend -->
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-brands fa-html5 text-4xl text-orange-500"></i>
+                    <span class="font-semibold">HTML</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-brands fa-css3-alt text-4xl text-blue-500"></i>
+                    <span class="font-semibold">CSS</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+
+                    <i class="devicon-tailwindcss-plain colored text-4xl"></i>
+                    <span class="font-semibold">Tailwind CSS</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-brands fa-react text-4xl text-sky-400"></i>
+                    <span class="font-semibold">React</span>
+                </div>
+
+                <!-- Backend -->
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-brands fa-node-js text-4xl text-green-600"></i>
+                    <span class="font-semibold">Node.js</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+
+                    <i class="devicon-express-original" style="font-size: 40px;"></i>
+                    <span class="font-semibold">Express.js</span>
+                </div>
+
+                <!-- Database -->
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-solid fa-leaf text-4xl text-green-600"></i>
+                    <span class="font-semibold">MongoDB</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+
+                    <i class="devicon-mysql-plain text-3xl"></i>
+                    <span class="font-semibold">MySQL</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-solid fa-cloud text-4xl text-purple-500"></i>
+                    <span class="font-semibold">Supabase</span>
+                </div>
+
+                <!-- Tools / DevOps -->
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-brands fa-git-alt text-4xl text-orange-600"></i>
+                    <span class="font-semibold">Git</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-brands fa-github text-4xl"></i>
+                    <span class="font-semibold">GitHub</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-brands fa-aws text-4xl text-orange-400"></i>
+                    <span class="font-semibold">AWS EC2</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+
+                    <img src="/img_folder/nginx.png" class="h-10 w-auto object-contain">
+                    <span class="font-semibold">Nginx</span>
+
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-solid fa-bolt text-4xl text-yellow-500"></i>
+                    <span class="font-semibold">PM2</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+
+                    <img src="/img_folder/vrlsel.webp" class="h-9">
+                    <span class="font-semibold">Vercel</span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center gap-3 rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 hover:shadow-xl hover:border-primary/40 transition">
+                    <i class="fa-brands fa-linux text-4xl text-black dark:text-white"></i>
+                    <span class="font-semibold">Linux</span>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!-- Projects Section -->
+
+        <section class="py-20" id="projects">
+            <div class="flex items-center justify-between mb-12">
+                <h3 class="text-3xl font-bold">Featured Projects</h3>
+                <a href="https://github.com/amitthakurcodes" target="_blank"
+                    class="hidden md:inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline">
+                    <i class="fa-brands fa-github"></i> View all on GitHub →
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-10">
+
+                <!-- Project 1: Learnova -->
+
+                <div
+                    class="group grid md:grid-cols-2 gap-6 items-center overflow-hidden rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 transition-all hover:shadow-2xl hover:border-primary/30 p-4">
+
+                    <!-- Image Section -->
+                    <div class="relative">
+
+                        <!-- Background Plate -->
+                        <div
+                            class="absolute inset-0 bg-white dark:bg-slate-800 rounded-2xl translate-x-3 translate-y-3 opacity-60 blur-md transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1">
+                        </div>
+
+                        <!-- Main Image -->
+                        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                            <!-- <img class="h-full w-full object-cover transition-all duration-500 group-hover:scale-110" -->
+                              <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
+                                src="img_folder/learnova.png" alt="Learnova Project" />
+                        </div>
+
+                    </div>
+
+                    <!-- Content Section -->
+                    <div class="flex flex-col justify-center p-4 lg:p-8 gap-5">
+
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">
+                                Full Stack App · Live
+                            </span>
+
+                            <h4 class="text-2xl font-black mb-3">Learnova</h4>
+
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                A full-featured ed-tech platform with authentication, course management, and role-based
+                                dashboards for students and instructors. Built with a scalable architecture and deployed
+                                on AWS EC2.
+                            </p>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">React</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Node.js</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">MongoDB</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Express</span>
+                            <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">JWT
+                                AUTH</span>
+                            <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">AWS
+                                EC2</span>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex gap-4 pt-2 flex-wrap">
+
+                            <a href="http://13.235.2.59" target="_blank"
+                                class="rounded-xl bg-primary px-7 py-3 text-sm font-bold text-white hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20">
+                                🚀 Live Demo
+                            </a>
+
+                            <a href="https://github.com/amitthakurcodes/Learnova" target="_blank"
+                                class="rounded-xl border border-primary/20 px-7 py-3 text-sm font-bold text-primary hover:bg-primary/5 transition-colors flex items-center gap-2">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Project 2: Finance Dashboard (image right side) -->
+
+
+                <!-- Project 2: Finance Dashboard (image right side) -->
+                <div
+                    class="group grid md:grid-cols-2 gap-6 items-center overflow-hidden rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 transition-all hover:shadow-2xl hover:border-primary/30 p-4">
+
+                    <!-- Content -->
+                    <div class="flex flex-col justify-center p-4 lg:p-8 gap-5 order-2 md:order-1">
+
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">
+                                Dashboard · Live
+                            </span>
+
+                            <h4 class="text-2xl font-black mb-3">Finance Dashboard</h4>
+
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                A feature-rich finance dashboard for expense tracking, transaction management, CSV
+                                export, and date-based filtering, built with React and Supabase, with interactive data
+                                visualization and deployed on Vercel.
+                            </p>
+                        </div>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">React.js</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Supabase
+                                (Auth + Database)</span>
+                            <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">SQL
+                                Schema Design</span>
+                            <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Vercel
+                                Deployment</span>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex gap-4 pt-2 flex-wrap">
+
+                            <a href="https://finance-dashboard-eight-brown.vercel.app" target="_blank"
+                                class="rounded-xl bg-primary px-7 py-3 text-sm font-bold text-white hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20">
+                                🚀 Live Demo
+                            </a>
+
+                            <a href="https://github.com/amitthakurcodes/finance-dashboard" target="_blank"
+                                class="rounded-xl border border-primary/20 px-7 py-3 text-sm font-bold text-primary hover:bg-primary/5 transition-colors flex items-center gap-2">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Image Section -->
+                    <div class="relative order-1 md:order-2">
+
+                        <!-- Background Plate -->
+                        <div
+                            class="absolute inset-0 bg-white dark:bg-slate-800 rounded-2xl translate-x-3 translate-y-3 opacity-60 blur-md transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1">
+                        </div>
+
+                        <!-- Main Image -->
+                        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                            <!-- <img class="h-full w-full object-cover transition-all duration-500 group-hover:scale-110" -->
+                             <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
+                                src="img_folder/dashboard.png" alt="Finance Dashboard Project" />
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Mobile: View all GitHub link -->
+                <!-- <div class="mt-10 text-center md:hidden">
+                    <a href="https://github.com/amitthakurcodes" target="_blank"
+                        class="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline">
+                        <i class="fa-brands fa-github"></i> View all projects on GitHub →
+                    </a>
+                </div> -->
+
+                <div class="mt-16 text-center">
+
+                    <h4 class="text-xl font-bold mb-3">More Projects on GitHub</h4>
+
+                    <p class="text-slate-600 dark:text-slate-400 mb-6">
+                        I've built several other projects including mini tools, experiments, and backend systems.
+                        Explore them on my GitHub.
+                    </p>
+
+                    <a href="https://github.com/amitthakurcodes" target="_blank" class="inline-flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-xl font-bold 
+                           hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20">
+
+                        <i class="fa-brands fa-github text-lg"></i>
+                        Explore All Projects
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- Contact Section -->
+        <section class="py-20" id="contact">
+            <div class="flex flex-col gap-12 lg:flex-row">
+                <div class="flex-1 space-y-6">
+                    <h3 class="text-4xl font-black">Let's Connect</h3>
+                    <p class="text-lg text-slate-600 dark:text-slate-400">
+                        Interested in working together or just want to say hi? Feel free to reach out through the form
+                        or my social handles.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-slate-500">Email</p>
+                                <a href="mailto:thakuramitchand404@gmail.com?subject=Work Inquiry&body=Hello Amit, I want to work with you"
+                                    class="font-bold">
+                                    thakuramitchand404@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-slate-500">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/amitchand-thakur-8711213b5/" class="font-bold">
+                                    linkedin.com/in/amitchand-thakur
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-slate-500">GitHub</p>
+                                <a href="https://github.com/amitthakurcodes" class="font-bold">
+                                    github.com/amitthakurcodes
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-widest text-slate-500">Phone</p>
+                                <a href="tel:+917498274325" class="font-bold hover:text-primary transition-colors">
+                                    +91 7498274325
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Contact Form with EmailJS -->
+                <div class="flex-1">
+                    <div class="space-y-4 rounded-3xl bg-white dark:bg-slate-900/50 p-8 shadow-xl shadow-primary/5">
+                        <div class="grid gap-4 md:grid-cols-2">
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold">First Name</label>
+                                <input id="firstName"
+                                    class="w-full rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark p-3 focus:ring-2 focus:ring-primary focus:outline-none"
+                                    placeholder="Enter your first name " type="text" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold">Last Name</label>
+                                <input id="lastName"
+                                    class="w-full rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark p-3 focus:ring-2 focus:ring-primary focus:outline-none"
+                                    placeholder="Enter your last name " type="text" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold">Email Address</label>
+                            <input id="email"
+                                class="w-full rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark p-3 focus:ring-2 focus:ring-primary focus:outline-none"
+                                placeholder="Enter your email address" type="email" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold">Message</label>
+                            <textarea id="message"
+                                class="w-full rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark p-3 focus:ring-2 focus:ring-primary focus:outline-none"
+                                placeholder="Write your message here..." rows="4"></textarea>
+                        </div>
+
+                        <!-- Status Message -->
+                        <div id="statusMsg" class="hidden text-sm font-medium text-center py-2 px-4 rounded-xl"></div>
+
+                        <button id="sendBtn" type="button"
+                            class="w-full rounded-xl bg-primary py-4 font-bold text-white shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
+                            Send Message
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-primary/10 py-12">
+        <div class="mx-auto max-w-7xl px-6 text-center">
+            <div class="flex items-center justify-center gap-2 mb-6">
+                <div class="h-8 w-8 rounded bg-primary text-white flex items-center justify-center">
+                    <span class="material-symbols-outlined text-sm">code</span>
+                </div>
+                <span class="text-lg font-bold">Amit Thakur</span>
+            </div>
+            <p class="text-sm text-slate-500 dark:text-slate-400">
+                © 2026 Amit Thakur. All rights reserved. Designed with precision.
+            </p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
