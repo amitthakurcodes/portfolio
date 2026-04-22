@@ -45,27 +45,67 @@
     <!-- Top Navigation Bar -->
     <header
         class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+
         <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+
+            <!-- Logo -->
             <div class="flex items-center gap-2">
                 <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-white">
                     <span class="material-symbols-outlined">code</span>
                 </div>
                 <h2 class="text-xl font-bold tracking-tight">Amit Thakur</h2>
             </div>
-            <nav class="hidden items-center gap-8 md:flex">
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="#skills">Skills</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
-                <a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
-                <a href="Amit_Resume.pdf"
-                    class="rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white hover:bg-primary/90 transition-all">
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#about" class="text-sm font-medium hover:text-primary">About</a>
+                <a href="#skills" class="text-sm font-medium hover:text-primary">Skills</a>
+                <a href="#projects" class="text-sm font-medium hover:text-primary">Projects</a>
+                <a href="#contact" class="text-sm font-medium hover:text-primary">Contact</a>
+
+                <a href="Amit_Resume.pdf" class="rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white">
                     Resume
                 </a>
             </nav>
-            <button class="md:hidden text-primary">
-                <span class="material-symbols-outlined">menu</span>
+
+            <!-- Mobile Hamburger -->
+            <button id="menu-btn" class="md:hidden text-primary z-50 relative">
+                <span class="material-symbols-outlined text-4xl">
+                    menu
+                </span>
             </button>
+
         </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 shadow-xl border-t border-primary/10">
+
+            <div class="flex flex-col p-6 gap-5 text-center">
+
+                <a href="#about" class="mobile-link text-lg font-semibold">
+                    About
+                </a>
+
+                <a href="#skills" class="mobile-link text-lg font-semibold">
+                    Skills
+                </a>
+
+                <a href="#projects" class="mobile-link text-lg font-semibold">
+                    Projects
+                </a>
+
+                <a href="#contact" class="mobile-link text-lg font-semibold">
+                    Contact
+                </a>
+
+                <a href="Amit_Resume.pdf" class="bg-primary text-white rounded-xl py-3 font-bold">
+                    Resume
+                </a>
+
+            </div>
+
+        </div>
+
     </header>
 
     <main class="mx-auto max-w-7xl px-6">
@@ -85,19 +125,25 @@
                         seamless user experience.
                     </p>
                 </div>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#projects"
-                        class="rounded-xl bg-primary px-8 py-4 font-bold text-white shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                <div class="flex flex-col sm:flex-row flex-wrap gap-4">
+                    <a href="#projects" class="w-full sm:w-auto text-center rounded-xl bg-primary px-8 py-4
+                        font-bold text-white shadow-lg shadow-primary/20
+                        hover:scale-105 transition-transform">
                         View Projects
                     </a>
-                    <a href="Amit_Resume.pdf" download
-                        class="rounded-xl border border-primary/20 bg-primary/5 px-8 py-4 font-bold text-primary hover:bg-primary/10 transition-colors inline-block text-center">
+                    <a href="Amit_Resume.pdf" download class="w-full sm:w-auto text-center rounded-xl
+                        border border-primary/20 bg-primary/5
+                        px-8 py-4 font-bold text-primary
+                        hover:bg-primary/10 transition-colors">
                         Download Resume
                     </a>
-                    <a href="#contact"
-                        class="rounded-xl bg-slate-200 dark:bg-slate-800 px-8 py-4 font-bold hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors inline-block text-center">
+                    <a href="#contact" class="w-full sm:w-auto text-center rounded-xl
+                         border border-primary/20 bg-primary/5
+                         px-8 py-4 font-bold text-primary
+                         hover:bg-primary/10 transition-colors">
                         Contact Me
                     </a>
+
                 </div>
             </div>
             <div class="flex flex-1 justify-center">
@@ -301,7 +347,7 @@
                         <!-- Main Image -->
                         <div class="relative overflow-hidden rounded-2xl shadow-2xl">
                             <!-- <img class="h-full w-full object-cover transition-all duration-500 group-hover:scale-110" -->
-                              <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
+                            <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
                                 src="img_folder/learnova.png" alt="Learnova Project" />
                         </div>
 
@@ -427,7 +473,7 @@
                         <!-- Main Image -->
                         <div class="relative overflow-hidden rounded-2xl shadow-2xl">
                             <!-- <img class="h-full w-full object-cover transition-all duration-500 group-hover:scale-110" -->
-                             <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
+                            <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
                                 src="img_folder/dashboard.png" alt="Finance Dashboard Project" />
                         </div>
 
