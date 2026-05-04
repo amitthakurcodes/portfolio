@@ -320,6 +320,8 @@
 
         <!-- Projects Section -->
 
+
+        <!-- Projects Section -->
         <section class="py-20" id="projects">
             <div class="flex items-center justify-between mb-12">
                 <h3 class="text-3xl font-bold">Featured Projects</h3>
@@ -329,44 +331,88 @@
                 </a>
             </div>
 
-            <div class="flex flex-col gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Project 1: Learnova -->
 
+                <!-- Project 1: First project-->
                 <div
-                    class="group grid md:grid-cols-2 gap-6 items-center overflow-hidden rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 transition-all hover:shadow-2xl hover:border-primary/30 p-4">
+                    class="group flex flex-col overflow-hidden rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 transition-all hover:shadow-2xl hover:border-primary/30">
 
-                    <!-- Image Section -->
-                    <div class="relative">
-
-                        <!-- Background Plate -->
-                        <div
-                            class="absolute inset-0 bg-white dark:bg-slate-800 rounded-2xl translate-x-3 translate-y-3 opacity-60 blur-md transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1">
-                        </div>
-
-                        <!-- Main Image -->
-                        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
-                            <!-- <img class="h-full w-full object-cover transition-all duration-500 group-hover:scale-110" -->
-                            <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
-                                src="img_folder/learnova.png" alt="Learnova Project" />
-                        </div>
-
+                    <!-- Image -->
+                    <div class="relative overflow-hidden h-52">
+                        <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
+                            src="img_folder/prepwise.png" alt="Project 1" />
                     </div>
 
-                    <!-- Content Section -->
-                    <div class="flex flex-col justify-center p-4 lg:p-8 gap-5">
+                    <!-- Content -->
+                    <div class="flex flex-col flex-1 p-6 gap-4">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">
+                                Gen AI · Full Stack · Live
+                            </span>
+                            <h4 class="text-xl font-black mb-2">PrepWise AI</h4>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                AI-powered interview prep platform that generates technical & behavioral questions,
+                                analyzes resume vs job description with a match score, identifies skill gaps, and
+                                provides a personalized roadmap with a professional resume PDF.
+                            </p>
+                        </div>
 
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">React</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Node.js</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">MongoDB</span>
+                            <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Gemini
+                                API</span>
+                            <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">JWT
+                                Auth</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Puppeteer</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Render</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Vercel</span>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="flex gap-3 mt-auto pt-2">
+                            <a href="https://genai-interview-assistant.vercel.app/" target="_blank"
+                                class="flex-1 text-center rounded-xl bg-primary px-4 py-2.5 text-sm font-bold text-white hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20">
+                                🚀 Live Demo
+                            </a>
+                            <a href="https://github.com/amitthakurcodes/genai-interview-assistant" target="_blank"
+                                class="flex-1 text-center rounded-xl border border-primary/20 px-4 py-2.5 text-sm font-bold text-primary hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 2: Learnova -->
+                <div
+                    class="group flex flex-col overflow-hidden rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 transition-all hover:shadow-2xl hover:border-primary/30">
+
+                    <!-- Image -->
+                    <div class="relative overflow-hidden h-52">
+                        <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
+                            src="img_folder/learnova.png" alt="Learnova Project" />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="flex flex-col flex-1 p-6 gap-4">
                         <div>
                             <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">
                                 Full Stack App · Live
                             </span>
-
-                            <h4 class="text-2xl font-black mb-3">Learnova</h4>
-
-                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                            <h4 class="text-xl font-black mb-2">Learnova</h4>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                                 A full-featured ed-tech platform with authentication, course management, and role-based
-                                dashboards for students and instructors. Built with a scalable architecture and deployed
-                                on AWS EC2.
+                                dashboards for students and instructors. Deployed on AWS EC2.
                             </p>
                         </div>
 
@@ -380,55 +426,46 @@
                                 class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">MongoDB</span>
                             <span
                                 class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Express</span>
-                            <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">JWT
-                                AUTH</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Redux</span>
                             <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">AWS
                                 EC2</span>
                         </div>
 
                         <!-- Buttons -->
-                        <div class="flex gap-4 pt-2 flex-wrap">
-
+                        <div class="flex gap-3 mt-auto pt-2">
                             <a href="http://13.235.2.59" target="_blank"
-                                class="rounded-xl bg-primary px-7 py-3 text-sm font-bold text-white hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20">
+                                class="flex-1 text-center rounded-xl bg-primary px-4 py-2.5 text-sm font-bold text-white hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20">
                                 🚀 Live Demo
                             </a>
-
                             <a href="https://github.com/amitthakurcodes/Learnova" target="_blank"
-                                class="rounded-xl border border-primary/20 px-7 py-3 text-sm font-bold text-primary hover:bg-primary/5 transition-colors flex items-center gap-2">
+                                class="flex-1 text-center rounded-xl border border-primary/20 px-4 py-2.5 text-sm font-bold text-primary hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
                                 <i class="fa-brands fa-github"></i> GitHub
                             </a>
-
                         </div>
-
                     </div>
                 </div>
 
-
-
-
-
-                <!-- Project 2: Finance Dashboard (image right side) -->
-
-
-                <!-- Project 2: Finance Dashboard (image right side) -->
+                <!-- Project 3: Finance Dashboard -->
                 <div
-                    class="group grid md:grid-cols-2 gap-6 items-center overflow-hidden rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 transition-all hover:shadow-2xl hover:border-primary/30 p-4">
+                    class="group flex flex-col overflow-hidden rounded-2xl border border-primary/10 bg-white dark:bg-slate-900/50 transition-all hover:shadow-2xl hover:border-primary/30">
+
+                    <!-- Image -->
+                    <div class="relative overflow-hidden h-52">
+                        <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
+                            src="img_folder/dashboard.png" alt="Finance Dashboard Project" />
+                    </div>
 
                     <!-- Content -->
-                    <div class="flex flex-col justify-center p-4 lg:p-8 gap-5 order-2 md:order-1">
-
+                    <div class="flex flex-col flex-1 p-6 gap-4">
                         <div>
                             <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">
                                 Dashboard · Live
                             </span>
-
-                            <h4 class="text-2xl font-black mb-3">Finance Dashboard</h4>
-
-                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                            <h4 class="text-xl font-black mb-2">Finance Dashboard</h4>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                                 A feature-rich finance dashboard for expense tracking, transaction management, CSV
-                                export, and date-based filtering, built with React and Supabase, with interactive data
-                                visualization and deployed on Vercel.
+                                export, and date-based filtering with interactive data visualization.
                             </p>
                         </div>
 
@@ -437,82 +474,51 @@
                             <span
                                 class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">React.js</span>
                             <span
-                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Supabase
-                                (Auth + Database)</span>
-                            <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">SQL
-                                Schema Design</span>
-                            <span class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Vercel
-                                Deployment</span>
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Supabase</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">SQL</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Tailwind
+                                CSS</span>
+                            <span
+                                class="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">Vercel</span>
                         </div>
 
                         <!-- Buttons -->
-                        <div class="flex gap-4 pt-2 flex-wrap">
-
+                        <div class="flex gap-3 mt-auto pt-2">
                             <a href="https://finance-dashboard-eight-brown.vercel.app" target="_blank"
-                                class="rounded-xl bg-primary px-7 py-3 text-sm font-bold text-white hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20">
+                                class="flex-1 text-center rounded-xl bg-primary px-4 py-2.5 text-sm font-bold text-white hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20">
                                 🚀 Live Demo
                             </a>
-
                             <a href="https://github.com/amitthakurcodes/finance-dashboard" target="_blank"
-                                class="rounded-xl border border-primary/20 px-7 py-3 text-sm font-bold text-primary hover:bg-primary/5 transition-colors flex items-center gap-2">
+                                class="flex-1 text-center rounded-xl border border-primary/20 px-4 py-2.5 text-sm font-bold text-primary hover:bg-primary/5 transition-colors flex items-center justify-center gap-2">
                                 <i class="fa-brands fa-github"></i> GitHub
                             </a>
-
                         </div>
-
                     </div>
-
-                    <!-- Image Section -->
-                    <div class="relative order-1 md:order-2">
-
-                        <!-- Background Plate -->
-                        <div
-                            class="absolute inset-0 bg-white dark:bg-slate-800 rounded-2xl translate-x-3 translate-y-3 opacity-60 blur-md transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1">
-                        </div>
-
-                        <!-- Main Image -->
-                        <div class="relative overflow-hidden rounded-2xl shadow-2xl">
-                            <!-- <img class="h-full w-full object-cover transition-all duration-500 group-hover:scale-110" -->
-                            <img class="h-full w-full object-cover transition-all duration-350 group-hover:scale-105"
-                                src="img_folder/dashboard.png" alt="Finance Dashboard Project" />
-                        </div>
-
-                    </div>
-
                 </div>
 
-
-
-                <!-- Mobile: View all GitHub link -->
-                <!-- <div class="mt-10 text-center md:hidden">
-                    <a href="https://github.com/amitthakurcodes" target="_blank"
-                        class="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline">
-                        <i class="fa-brands fa-github"></i> View all projects on GitHub →
-                    </a>
-                </div> -->
-
-                <div class="mt-16 text-center">
-
-                    <h4 class="text-xl font-bold mb-3">More Projects on GitHub</h4>
-
-                    <p class="text-slate-600 dark:text-slate-400 mb-6">
-                        I've built several other projects including mini tools, experiments, and backend systems.
-                        Explore them on my GitHub.
-                    </p>
-
-                    <a href="https://github.com/amitthakurcodes" target="_blank" class="inline-flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-xl font-bold 
-                           hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20">
-
-                        <i class="fa-brands fa-github text-lg"></i>
-                        Explore All Projects
-
-                    </a>
-
-                </div>
 
             </div>
 
+            <!-- More projects CTA -->
+            <div class="mt-16 text-center">
+                <h4 class="text-xl font-bold mb-3">More Projects on GitHub</h4>
+                <p class="text-slate-600 dark:text-slate-400 mb-6">
+                    I've built several other projects including mini tools, experiments, and backend systems.
+                </p>
+                <a href="https://github.com/amitthakurcodes" target="_blank" class="inline-flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-xl font-bold 
+               hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/20">
+                    <i class="fa-brands fa-github text-lg"></i>
+                    Explore All Projects
+                </a>
+            </div>
+
         </section>
+
+
+
+
 
 
 
